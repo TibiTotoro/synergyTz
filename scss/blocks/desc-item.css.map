@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAW,CACT,IAAI,CAAC,aAAa,CAEpB,gBAAiB,CACf,OAAO,CAAC,IAAI,CACZ,IAAI,CAAC,aAAa,CAClB,UAAU,CAAC,IAAI,CACf,YAAY,CAAC,iBAAiB",
+"sources": ["desc-item.scss"],
+"names": [],
+"file": "desc-item.css"
+}

@@ -1,0 +1,18 @@
+.btn {
+  background:$dark_color;
+  color:$light_color;
+  width:100%;
+  text-align:center;
+  padding:20px 63px 24px;
+  border:0px;
+  font-size:18px;
+  text-transform:uppercase;
+  font-weight:bold;
+  text-decoration:none;
+  &:hover{
+  	background:#fff602;
+  	border-bottom:#8f6d1d 7px solid;
+  	padding-bottom:17px;
+  	color:$dark_color;
+  }
+}

@@ -1,0 +1,50 @@
+@mixin container() {
+	width:100%;
+	padding:0 15px;
+	max-width:1230px;
+	margin:0 auto;
+} 
+@mixin flex_wrap() {
+	display:flex;
+	flex-wrap:wrap;
+} 
+@mixin xxs {
+ @media screen and (max-width: $break-xxs){
+  	@content;
+  }
+}
+@mixin xs {
+ @media screen and (max-width: $break-xs){
+  	@content;
+  }
+}
+@mixin sm {
+ @media screen and (max-width: $break-sm){
+  	@content;
+  }
+}
+@mixin lg {
+ @media screen and (max-width: $break-lg){
+  	@content;
+  }
+}
+@mixin big_title_fs {
+	font-size:3em;
+	font-weight:bold;
+	 @media screen and (max-width: $break-xs){
+	 	font-size:2em;
+	 }
+}	
+@mixin text_fs {
+	font-size:1.5em;
+	 @media screen and (max-width: $break-xs){
+	 	font-size:1.3em;
+	 }
+}	
+@mixin btn_font {
+	font-size:18px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-decoration:none;
+	transition-duration:0.5s;
+}

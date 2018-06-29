@@ -1,0 +1,17 @@
+body {
+	min-width:320px;
+	margin:0 auto;
+	font-size:16px;
+	font-family: $main-font;
+	color:$dark-color;
+	@include xs {
+		font-size:14px;
+	}
+}
+.wrap {
+	max-width:1920px;
+	margin:0 auto;
+	@media screen and (min-width:1940px) {
+		box-shadow:0 0 10px #000;
+	}	
+}

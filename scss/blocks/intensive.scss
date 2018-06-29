@@ -1,0 +1,145 @@
+$bg_dark:#dfdbe7;
+$bg_light:#f3ebf5;
+.intensive {
+	background:linear-gradient(to right, $bg_dark 0, $bg_dark 50%, $bg_light 50%, $bg_light 100%);
+	@include sm {
+		background:$bg_light;
+	}
+}
+.intensive__wrap {
+	@include container;
+	display:flex;
+}
+.intensive__img {
+	@include sm {
+		display:none;
+	}
+	flex:0 0 270px;
+	margin-bottom:-25px;
+	align-self:flex-end;
+}
+.intensive__content {
+	background:#f3ebf5;
+	padding:55px 35px 25px;
+	@include sm {
+		padding:35px 0;
+	} 
+	@include xs {
+		text-align:center;
+	} 
+}
+.intensive__title {
+	@include big_title_fs;
+	color:$dark_color;
+	margin-bottom:10px;
+}
+.intensive__subtitle {
+	font-size:1.75em;
+	color:$dark_color;
+	font-family: $add_font;
+	margin-bottom:30px;
+}
+.intensive__text {
+	max-width:570px;
+	font-size:1.125em;
+	color:$dark_color;
+	margin-bottom:35px;
+	@include xs { 
+		max-width:100%;
+	}
+}
+.intensive__btn {
+	display:inline-block;
+	border:1px solid $dark_color;
+	padding: 20px 55px;
+	color:$dark_color;
+	@include btn_font;
+	&:hover {
+		background:#542749;
+		color:$light_color;
+	} 
+}
+.intensive__buy {
+	display:inline-block;
+	flex:0 1 340px;
+	margin-left:50px;
+	color:$dark_color;
+	@include xs {
+		flex:0 0 100%;
+		margin-left:0;
+		margin-top:15px;
+	}
+
+}
+.intensive__phone {
+	text-decoration:none;
+	font-weight:bold;
+	color:$dark_color;
+}
+.intensive__list {
+	display:flex;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin:0 -15px;
+	justify-content:space-between;
+	position:relative;
+	@include xs {
+		flex-wrap:wrap;
+		justify-content:center;
+	} 
+	&:before {
+		content:'';
+		border-top:1px solid $add_color;
+		width:calc(100% - 15px);
+		margin:0 auto;
+		position:absolute;
+		top:0;
+		left:15px;
+		@include sm { 
+			width:calc(100% - 30px);
+		}
+	}
+}	
+.intensive__item {
+	margin-bottom:25px;
+	padding:0 15px;
+}
+.intensive__date-wrap {
+	display:flex;
+	color:$add_color;
+}
+.intensive__date {
+	font-size:83px;
+	font-weight:bold;
+	letter-spacing: -1.59px;
+	height:65px;
+	line-height:72px;
+	display:block;
+}
+.intensive__month-wrap {
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.intensive__month {
+	font-weight:bold;
+	font-size:1.625em;
+	text-transform:uppercase;
+	letter-spacing: 0.18px;
+	line-height: 35.88px;
+
+}
+.intensive__time {
+	font-size:30px;
+	letter-spacing: 0.18px;
+	letter-spacing: 0.21px;
+	line-height: 30px;
+}
+.intensive__footer {
+	display:flex;
+	align-items:center;
+	@include xs {
+		flex-wrap:wrap;
+		justify-content:center;
+	}
+}

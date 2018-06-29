@@ -1,0 +1,219 @@
+﻿ @charset "utf-8"; 
+ .form {
+  text-align:center;
+}
+.form__title{
+  font-size:41px;
+  text-align:center;
+  color:$light_color;
+  font-family: $add_font;
+  letter-spacing: 1.02px;
+  line-height: 30px;
+  text-transform: uppercase;
+  &_popup {
+    color:$dark_color;
+    margin-bottom:10px;
+  }
+
+}
+.form__subtitle {
+  font-size:22px;
+  text-align:center;
+  color:$light_color;
+  letter-spacing: 0.55px;
+  margin-bottom:30px;
+}
+
+.form__submit {
+  background:$dark_color;
+  color:$light_color;
+  width:100%;
+  text-align:center;
+  padding:25px 63px;
+  border:0px;
+  font-size:18px;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.form__text {
+  color:$light_color;
+  font-size:0.875em;
+  text-transform:uppercase;
+  text-align:center;
+  margin-top:10px;
+  letter-spacing: 0.4px;
+}
+.form__switch {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 20px;
+}
+.form__switch + label {
+  position: relative;
+  padding: 2px 2px 2px 60px;
+  cursor: pointer;
+  display:block;
+  width:95%;
+  margin:23px auto 30px;
+  border:1px solid #FFF;
+  border-radius:25px;
+  height:52px;
+  @include xs {
+    height:48px;
+    max-width:228px;
+  }
+}
+.form__switch + label:before {
+	width:100%;	
+  content: 'участие онлайн';
+  position: absolute;
+  top: 2px;
+  left: 163px;
+  width: 50px;
+  background: transparent;
+  padding:13px;
+  box-sizing:border-box;
+  padding: 11px 13px 11px 60px; 
+  color: $light_color;
+  font-family: $add_font;
+  font-size: 0.75em;
+  line-height:1;
+  text-transform: uppercase;
+  letter-spacing: 0.69px;
+  @include xs {
+    left:123px;
+    padding-left:13px;
+  }
+}
+.form__switch + label:after {
+  content: 'живое участие';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 140px;
+  padding: 11px 13px 11px 60px; 
+  border-radius: 21px;
+  background: url(../img/live.svg) no-repeat, linear-gradient(#fff, #fff) repeat;
+  background-position: 16px center, 0 0;
+  transition: .2s;
+  box-sizing:border-box;
+  color: #839fb1;
+  font-family: $add_font;
+  font-size: 0.75em;
+  line-height:1;
+  text-transform: uppercase;
+  display:block;
+  letter-spacing: 0.69px;
+  @include xs {
+    background:#fff;
+    padding-left:13px;
+    width: 100px;
+  }
+}   
+.form__switch:checked + label:before {
+  display:block;
+  width: 140px;
+  left: 163px;
+  background: transparent;
+  content:'участие онлайн';
+  padding: 11px 13px 11px 60px; 
+  border-radius: 21px;
+  background: url(../img/onlain.svg) no-repeat, linear-gradient(#fff, #fff) repeat;
+  background-position: 16px center, 0 0;
+  color: #839fb1;
+  @include xs {
+    background:#fff;
+    padding-left:13px;
+    width: 100px;
+    left: 123px;
+  }
+}
+.form__switch:checked + label:after {
+	content: 'живое участие';
+	position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 140px;
+  padding: 13px 13px 13px 60px;  
+  border-radius: 21px;
+  background: transparent;
+  color:$light-color;
+  @include xs {
+    width: 100px;
+    padding-left:13px;
+  }
+}
+.form__checkbox-wrap {
+  display:inline-block;
+  margin-bottom:25px;
+}
+.form__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  margin: 10px 0 0 7px;
+}
+.form__checkbox + label {
+  position: relative;
+  display:block;
+  float:left;
+  margin-right:15px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding:2px;
+  border: 1px solid #CDD1DA;
+}
+.form__checkbox + label:before {
+  content: '';
+  position: absolute;
+  top:2px;
+  left:2px;
+  width: 24px;
+  height: 24px;
+  background: #FFF;
+}
+.form__checkbox + label:after {
+  content: '';
+  position: absolute;
+  z-index:5;
+  top: -3px;
+  left: 4px;
+  width: 26px;
+  height: 26px;
+  background: url(../img/check.svg) no-repeat;
+  opacity: 0;
+  transition: .2s;
+}
+.form__checkbox:checked + label:after {
+  opacity: 1;
+}
+.form__checkbox-text {
+  color:$light-color;
+  text-transform:uppercase;
+  display:inline-block;
+  font-size:0.75em;
+  letter-spacing: 1px; 
+  text-align:left;
+}
+.form__input {
+  display:block;
+  width:100%;
+  padding:23px 23px 23px 23px;
+  background:#ebedef;
+  margin-bottom:17px;
+  border:0px;
+  &:focus {
+   outline:1px solid $pale_color;
+   
+ }
+}
+.form__input::-webkit-input-placeholder       {color:$pale_color;  opacity: 1; transition: opacity 0.3s ease;}
+.form__input::-moz-placeholder                {color:$pale_color; opacity: 1; transition: opacity 0.3s ease;}
+.form__input:-moz-placeholder                 {color:$pale_color; opacity: 1; transition: opacity 0.3s ease;}
+.form__input:-ms-input-placeholder            {color:$pale_color; opacity: 1; transition: opacity 0.3s ease;}
+.form__input:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+.form__input:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+.form__input:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+.form__input:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}

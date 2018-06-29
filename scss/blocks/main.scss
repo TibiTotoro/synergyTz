@@ -1,0 +1,57 @@
+.main {
+	min-height:100vh;
+	background:url(../img/main_bg.jpg);
+	background-size:cover;
+	background-position:center top;
+	padding-bottom:20px;
+	@include sm {
+		background:#d6d7db;
+	}	
+} 
+.main__container {
+	@include container;
+}
+.main__wrap {
+	@include flex_wrap;
+	justify-content:space-between;
+	@include xs {
+		justify-content:center;
+	}
+}
+.main__info {
+	@include xs {
+		flex:0 0 100%;
+	}
+}
+.main__form {
+	flex:0 0 435px;
+	margin-top:10px;
+	@include sm {
+		flex:0 0 390px;
+	}
+	@include xs {
+		flex:0 1 435px;
+		max-width:100%;
+	}
+}
+.main__form-wrap {
+	background-color:rgba(44,76, 101, 0.4);
+	padding:45px 56px 40px;
+	@include sm {
+		padding:25px;
+	}
+
+}
+.main__social {
+	text-align:center;
+	img {
+		padding:0 4px;
+	}
+}
+.main__social-title {
+	font-size: 0.75em;
+	text-transform: uppercase;
+	color: #426176;
+	letter-spacing: 0.3px;
+	margin:5px 0;
+}

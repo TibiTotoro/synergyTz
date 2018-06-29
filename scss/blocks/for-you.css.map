@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS,CACR,UAAU,CAAC,0BAA0B,CACrC,eAAe,CAAC,KAAK,CACrB,mBAAmB,CAAC,UAAU",
+"sources": ["for-you.scss"],
+"names": [],
+"file": "for-you.css"
+}

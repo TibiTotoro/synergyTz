@@ -1,0 +1,79 @@
+.main-header {
+	display:flex;
+	justify-content:space-between;
+	padding:30px 0;
+	@include sm {
+		flex-wrap:wrap;
+	}
+	@include xs {
+		justify-content:center;
+		padding:15px 0;
+	}	
+} 
+.main-header__logo {
+	flex:0 0 350px;
+	margin-left:65px;
+	margin-top:10px;
+	@include sm {
+		margin-left:0px;
+		margin-right:15px;
+		flex:0 0 325px;
+		}
+
+}
+.main-header__contacts{
+	flex:0 0 420px;
+	display:flex;
+	flex-wrap:wrap;
+	padding-right:12px;
+	justify-content:space-between;
+	@include sm {
+		padding-right:0;
+		flex:0 1 375px;
+		}
+}
+.main-header__phone {
+	flex:0 0 160px;
+color: $add_color;
+font-size: 1.125em;
+font-weight: 700;
+text-transform: uppercase;
+text-decoration:none;
+background:url(../img/phone.svg) no-repeat;
+padding-left:20px;
+line-height:1;
+letter-spacing: 0.2px;
+}
+.main-header__mail {
+	flex:0 0 205px;
+	color: $add_color;
+font-size: 1.125em;
+background:url(../img/mail.svg) no-repeat;
+background-position:0 0.2em;
+padding-left:18px;
+line-height:1;
+font-weight: 700;
+letter-spacing: 0.5px;
+
+}
+
+.main-header__adress {
+	margin-top:25px;
+	background:url(../img/metro.svg) no-repeat;
+background-position:0 5px;
+	color:$add_color;
+	text-decoration:none;
+	padding-left:20px;
+	@include xs {
+		margin-top:10px;
+	} 
+
+}
+.main-header__adress-metro {
+	color:$dark_color;
+	display:block;
+	font-weight:normal;
+	font-weight:700;
+	letter-spacing: 0.6px;
+	font-size:18px;
+}
